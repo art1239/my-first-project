@@ -3,19 +3,14 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head>
 <body>
 
-
+<app-header></app-header>
 <div class="container">
+
   <div class="row">
-    <div class="col-xl-12">
-      <h3>Im in the App Component</h3>
-      <succes-warning-alert></succes-warning-alert>
-      <error-warning-alert></error-warning-alert>
- 
-<hr>
-
-<app-serverc></app-serverc>
-
-<button [disabled]="!isDisabled" class="btn btn-primary"> Click</button>
+    <div class="col-md-12">
+   <app-recipe></app-recipe>
+   <app-shopping-list></app-shopping-list>
+  
     </div>
   </div>
 </div>

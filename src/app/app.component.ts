@@ -7,12 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Art Page';
-  isDisabled=false;
+  username='';
+  isLogedIn=false;
+
 
   constructor (){
-setTimeout(()=>{
-this.isDisabled=true;
-},3000);
+  
 
 }
+
+logIn(){
+  this.isLogedIn=true;
 }
+changeTitle(){
+this.username='';
+}
+updateNameValue(event:any){
+this.title=event.target.value;
+}
+}
+
